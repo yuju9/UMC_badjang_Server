@@ -47,7 +47,7 @@ public class SearchDao {
 
     public List<GetSearchBoardRes> searchBoard(String query) {
         String searchQuery = "select * " +
-                "from board " +
+                "from Board " +
                 "where post_name like ? " +
                 "or post_content like ? " +
                 "order by post_view desc";
